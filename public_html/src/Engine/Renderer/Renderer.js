@@ -37,14 +37,14 @@ Renderer.prototype.initialize = function(fileName) {
         this.indices = this.indicesObject.TRIANGLES;
 
             // Step D: gets a reference to the aSquareVertexPosition attribute
-        this.mShaderVertexPositioAttribute = gl.getAttribLocation(this.mCompiledShader, "aSquareVertexPosition");
+        this.mShaderVertexPositioAttribute = gl.getAttribLocation(this.mCompiledShader, "aVertexPosition");
         // Step F: Describe the characters of the vertex position
             // Step G: Gets a reference to the uniform variable uPixelColor
         this.mPixelColor = gl.getUniformLocation(this.mCompiledShader, "uPixelColor");
 
-        this.mModel= gl.getUniformLocation(this.mCompiledShader, "uModelTransform");
+        this.mModel= gl.getUniformLocation(this.mCompiledShader, "uModelViewMatrix");
 
-        this.mViewProjTransform = gl.getUniformLocation(this.mCompiledShader, "uViewProjTransform");
+        this.mViewProjTransform = gl.getUniformLocation(this.mCompiledShader, "uProjectionMatrix");
     
     
         this.run();

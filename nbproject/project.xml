@@ -8,12 +8,23 @@
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
             <word>aColor</word>
             <word>aSquareVertexPosition</word>
+            <word>aVertexNormal</word>
+            <word>aVertexPosition</word>
             <word>fragColor</word>
+            <word>LambertianTerm</word>
+            <word>lightDirection</word>
             <word>mediump</word>
+            <word>uLightDiffuse</word>
+            <word>uLightDirection</word>
+            <word>uMaterialDiffuse</word>
             <word>uModelTransform</word>
+            <word>uModelViewMatrix</word>
+            <word>uNormalMatrix</word>
             <word>uPixelColor</word>
+            <word>uProjectionMatrix</word>
             <word>uViewProjTransform</word>
             <word>vec</word>
+            <word>vVertexColor</word>
         </spellchecker-wordlist>
     </configuration>
 </project>

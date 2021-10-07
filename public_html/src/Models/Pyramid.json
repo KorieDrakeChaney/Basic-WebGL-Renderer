@@ -1,34 +1,29 @@
 {
-    "vertices" : {
-        "TRIANGLES" :
-                [], 
-        "TRIANGLE_STRIP" :
-                [], 
-        "TRIANGLE_FAN" : 
-                [], 
-        "POINTS" : 
-                [], 
-        "LINES" : 
-                [], 
-        "LINE_LOOP" :
-                [], 
-        "LINE_STRIP" : 
-                []
-    },
-        
+    "vertices" : [
+            0.5, 0.5, 0.0, 
+            0.5, 0.5, -1.0, 
+            -0.5, 0.5, -1.0,
+            -0.5, 0.5, 0.0,
+            -0.0, -0.5, -0.5
+    
+    ]
+    ,
     "indices" : {
         "TRIANGLES" :
-                [], 
+                [
+                1, 4, 0, 1, 2, 4,
+                2, 4, 3, 0, 3, 4,
+                0, 1, 2, 2, 3, 0], 
         "TRIANGLE_STRIP" :
                 [], 
         "TRIANGLE_FAN" : 
                 [], 
         "POINTS" : 
                 [], 
-        "LINES" : 
-                [], 
         "LINE_LOOP" :
-                [], 
+                 [1, 4, 0, 1, 2, 4,
+                2, 4, 3, 0, 3, 4,
+                0, 1, 2, 2, 3, 0], 
         "LINE_STRIP" : 
                 []
     }

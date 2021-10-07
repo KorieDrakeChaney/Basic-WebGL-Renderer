@@ -15,7 +15,6 @@ function MyGame(htmlCanvasID){
     this.mWhiteSq = null;
     this.mRedSq = null;
     this.mVertexBuffer = null;
-    this.mCamera = null;
     this.prevObject = gEngine.Controls.getObjectSelection();
     
     gEngine.Core.initializeEngineCore(htmlCanvasID);
@@ -85,14 +84,14 @@ MyGame.prototype.update = function() {
              case 'TRIANGLE':
                 this.mWhiteSq.initialize('src/Models/Triangle.json');
                  break;
-             case 'PYRAMID':
-                 console.log('pyramid');
-                 break;
              case 'CONE':
                 this.mWhiteSq.initialize('src/Models/Cone.json');
                  break;
              case "CUBE":
                  this.mWhiteSq.initialize('src/Models/Cube.json');
+                 break;
+             case "PYRAMID":
+                 this.mWhiteSq.initialize('src/Models/Pyramid.json');
                  break;
          };
         this.prevObject = gEngine.Controls.getObjectSelection();
