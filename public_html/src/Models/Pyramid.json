@@ -1,0 +1,35 @@
+{
+    "vertices" : {
+        "TRIANGLES" :
+                [], 
+        "TRIANGLE_STRIP" :
+                [], 
+        "TRIANGLE_FAN" : 
+                [], 
+        "POINTS" : 
+                [], 
+        "LINES" : 
+                [], 
+        "LINE_LOOP" :
+                [], 
+        "LINE_STRIP" : 
+                []
+    },
+        
+    "indices" : {
+        "TRIANGLES" :
+                [], 
+        "TRIANGLE_STRIP" :
+                [], 
+        "TRIANGLE_FAN" : 
+                [], 
+        "POINTS" : 
+                [], 
+        "LINES" : 
+                [], 
+        "LINE_LOOP" :
+                [], 
+        "LINE_STRIP" : 
+                []
+    }
+}
