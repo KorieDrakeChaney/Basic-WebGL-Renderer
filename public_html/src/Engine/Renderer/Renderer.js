@@ -123,7 +123,8 @@ Renderer.prototype.render = function(){
             gEngine.Controls.Scale.Y, 
             gEngine.Controls.Scale.Z
             ));
-    
+    try {
+        
     switch(gEngine.Controls.getRenderingMode()){
         case "TRIANGLES":
             this.changeIndices(this.indicesObject.TRIANGLES);
@@ -152,7 +153,10 @@ Renderer.prototype.render = function(){
             break;
     };
 
-
+    }
+    catch(err){
+        console.log(err);
+    };
    this.cleanBuffer();
 };
 
