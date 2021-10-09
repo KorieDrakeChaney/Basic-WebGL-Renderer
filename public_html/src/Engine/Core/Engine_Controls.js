@@ -54,9 +54,9 @@ gEngine.Controls = (function() {
     TranslationFolder.add(Options.Translation, 'Y', -3, 3).listen();
     TranslationFolder.add(Options.Translation, 'Z', -40, 7).listen();
     const ScaleFolder = gui.addFolder('Scale');
-    ScaleFolder.add(Options.Scale, 'X', 0, 10).listen();
-    ScaleFolder.add(Options.Scale, 'Y', 0, 10).listen();
-    ScaleFolder.add(Options.Scale, 'Z', 0, 10).listen();
+    ScaleFolder.add(Options.Scale, 'X', 0.01, 10).listen();
+    ScaleFolder.add(Options.Scale, 'Y', 0.01, 10).listen();
+    ScaleFolder.add(Options.Scale, 'Z', 0.01, 10).listen();
 
     };
     

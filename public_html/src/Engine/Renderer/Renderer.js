@@ -13,10 +13,18 @@ var Renderer = function(shader, viewProjMatrix) {
     this.VAO = gl.createVertexArray();
     this.IBO = gl.createBuffer();
     this.VBO = gl.createBuffer();
-    this.data;
+    this.data = {
+        vertices : [0], 
+        indices : 
+                {
+                    TRIANGLES : [], 
+                    TRIANGLE_FAN : [],
+                    LINE_LOOP : []
+                }
+    };
     this.indices;
     this.vertices;
-    this.indicesObject;
+    this.indicesObject = this.data.indices;
     this.mCompiledShader = shader;  // the shader for shading this object
     this.mShaderVertexPositionAttribute = null;
     this.mPixelColor = null;
@@ -111,6 +119,8 @@ Renderer.prototype.render = function(){
     gl.bindVertexArray(this.VAO);
     gl.bindBuffer(gl.ARRAY_BUFFER, this.VBO);
     gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.IBO);
+
+   
 
     
     this.loadObjectTransform(this.mForm.changeAll(

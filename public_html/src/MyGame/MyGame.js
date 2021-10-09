@@ -109,6 +109,8 @@ MyGame.prototype.draw = function(){
 
     
     //Step C: Activate the white shader to drawg
+    this.mWhiteSq.getForm().incRotationByDegree(this.whiteRotation);
+
     this.mWhiteSq.render();
     // Step D: Activate the red shader to draw
 };

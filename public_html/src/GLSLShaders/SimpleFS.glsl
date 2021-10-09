@@ -1,8 +1,10 @@
-precision mediump float;  // sets the precision for floating point computation
+#version 300 es
+precision mediump float; 
+
 uniform vec4 uPixelColor; // to transform the vertex position
 
-varying vec3 aColor;
-
+in vec3 ourColor;
+out vec4 FragColor;
 void main(void){
-    gl_FragColor = vec4(aColor.x, 0.1, aColor.y, 1.0);
+    FragColor = vec4(abs(ourColor), 1.0);
 }

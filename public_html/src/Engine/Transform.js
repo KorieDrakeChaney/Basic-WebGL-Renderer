@@ -68,7 +68,8 @@ Transform.prototype.incPosBy = function(x = 0, y = 0){
 };
 
 Transform.prototype.incRotationByDegree = function(rotation){
-    this.mRotationInRad += this.getDegreeToRad(rotation);
+    this.mRotationInRad[0] += this.getDegreeToRad(rotation);
+
 };
 
 Transform.prototype.incSizeBy = function(width = 0, height = 0){
@@ -96,7 +97,6 @@ Transform.prototype.getModel = function() {
     
     mat4.translate(matrix, matrix, vec3.fromValues(this.mPosition[0], this.mPosition[1], this.mPosition[2]));
 
-    
     mat4.rotate(matrix, matrix, this.mRotationInRad[0], vec3.fromValues(1, 0, 0));
     mat4.rotate(matrix, matrix, this.mRotationInRad[1], vec3.fromValues(0, 1, 0));
     mat4.rotate(matrix, matrix, this.mRotationInRad[2], vec3.fromValues(0, 0, 1));
