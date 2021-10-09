@@ -50,8 +50,8 @@ gEngine.Controls = (function() {
     RotationFolder.add(Options.Rotation, 'Y', 0, Math.PI * 2).listen();
     RotationFolder.add(Options.Rotation, 'Z', 0, Math.PI * 2).listen();
     const TranslationFolder = gui.addFolder('Translation');
-    TranslationFolder.add(Options.Translation, 'X', -10, 60).listen();
-    TranslationFolder.add(Options.Translation, 'Y', 40, 70).listen();
+    TranslationFolder.add(Options.Translation, 'X', -3, 3).listen();
+    TranslationFolder.add(Options.Translation, 'Y', -3, 3).listen();
     TranslationFolder.add(Options.Translation, 'Z', -40, 7).listen();
     const ScaleFolder = gui.addFolder('Scale');
     ScaleFolder.add(Options.Scale, 'X', 0, 10).listen();

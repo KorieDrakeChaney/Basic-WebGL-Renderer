@@ -111,7 +111,7 @@ Transform.prototype.changeTranslation = function (x, y, z){
     mat4.translate(matrix, matrix, vec3.fromValues(x, y, z));
 
     
-    return matrix;
+    return mat4.multiply(matrix, this.getModel(), matrix);
 };
 
 

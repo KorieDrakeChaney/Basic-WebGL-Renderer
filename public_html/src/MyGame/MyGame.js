@@ -42,7 +42,7 @@ MyGame.prototype.initialize = function() {
     
     window.addEventListener('resize', () => {
        this.mCamera.changeCameraViewport([0, 0, gl.canvas.width, gl.canvas.height]);
-       
+       this.mWhiteSq.getForm().setAll([20, 60, -((gl.canvas.height * 10)/gl.canvas.width)], [4, 4, 4], [0, 0, 0]);
     });
     
     this.mCamera.setBackgroundColor([0, 0.8, 0.94, 1.0]);
