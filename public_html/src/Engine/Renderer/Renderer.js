@@ -123,6 +123,7 @@ Renderer.prototype.render = function(){
             gEngine.Controls.Scale.Y, 
             gEngine.Controls.Scale.Z
             ));
+    
     try {
         
     switch(gEngine.Controls.getRenderingMode()){
