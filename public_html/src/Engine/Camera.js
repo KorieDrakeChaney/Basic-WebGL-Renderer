@@ -56,8 +56,8 @@ Camera.prototype.getVPMatrix = function() {
 
 
     mat4.perspective(this.mProjMatrix, 
-        50, 
-        (window.innerWidth - 20) / (window.innerHeight - 20 ), 
+        120, 
+        (window.innerWidth) / (window.innerHeight), 
         -halfWCHeight, 
         halfWCHeight, 
         this.mNearPlane, 

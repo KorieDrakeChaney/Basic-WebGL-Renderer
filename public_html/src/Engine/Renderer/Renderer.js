@@ -72,6 +72,7 @@ Renderer.prototype.run = function() {
         gl.vertexAttribPointer(this.mShaderVertexPositioAttribute, 3, gl.FLOAT, false, 0, 0);
 
         this.activateShader(this.mColor, this.mVPMatrix);
+        
 };
 
 
@@ -123,7 +124,6 @@ Renderer.prototype.render = function(){
             gEngine.Controls.Scale.Y, 
             gEngine.Controls.Scale.Z
             ));
-    
     try {
         
     switch(gEngine.Controls.getRenderingMode()){
@@ -230,4 +230,4 @@ Renderer.prototype.setModel = function(model) { model = this.mModel; };
 
 Renderer.prototype.setColor = function(color){this.mColor = color;};
 Renderer.prototype.getColor = function(){return this.mColor;};
-Renderer.prototype.getXform = function() {return this.mForm;};
+Renderer.prototype.getForm = function() {return this.mForm;};

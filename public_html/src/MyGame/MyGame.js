@@ -42,6 +42,7 @@ MyGame.prototype.initialize = function() {
     
     window.addEventListener('resize', () => {
        this.mCamera.changeCameraViewport([0, 0, gl.canvas.width, gl.canvas.height]);
+       
     });
     
     this.mCamera.setBackgroundColor([0, 0.8, 0.94, 1.0]);
@@ -57,11 +58,11 @@ MyGame.prototype.initialize = function() {
     // Step C: Create the renderable objects
     this.mWhiteSq = new Renderer(this.mConstColorShader, this.mCamera.getVPMatrix());
     this.mWhiteSq.setColor([1, 0.8, 1, 1]);
+
+    // Step D: Initialize the white renderable object: center
+    this.mWhiteSq.getForm().setAll([20, 60, -((gl.canvas.height * 10)/gl.canvas.width)], [4, 4, 4], [0, 0, 0]);
     this.mWhiteSq.initialize('src/Models/Square.json');
 
-    
-    // Step D: Initialize the white renderable object: center
-    this.mWhiteSq.getXform().setAll([20, 60], [4, 4]);
     // E: Start the game loop running
     gEngine.GameLoop.start(this);
     
@@ -96,8 +97,6 @@ MyGame.prototype.update = function() {
          };
         this.prevObject = gEngine.Controls.getObjectSelection();
     };
-    var whiteXform = this.mWhiteSq.getXform();
-    whiteXform.incRotationByDegree(this.whiteRotation);
     
 
 };
@@ -110,7 +109,7 @@ MyGame.prototype.draw = function(){
     this.mCamera.setupViewProjection();
 
     
-    //Step C: Activate the white shader to draw
+    //Step C: Activate the white shader to drawg
     this.mWhiteSq.render();
     // Step D: Activate the red shader to draw
 };
@@ -122,7 +121,7 @@ MyGame.prototype.Input = function(){
 
   var keys = gEngine.Input.keys;
   
-  var whiteXform = this.mWhiteSq.getXform();
+  var whiteXform = this.mWhiteSq.getForm();
 
   if(gEngine.Input.isKeyPressed(keys.Right)){
       if(whiteXform.getX() > 27.5){

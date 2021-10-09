@@ -26,9 +26,9 @@ gEngine.Controls = (function() {
        }, 
        
        Translation : {
-         X : 20, 
-         Y : 60, 
-         Z : 5
+         X : 0, 
+         Y : 0, 
+         Z : 0
        }, 
        
        Scale : {
