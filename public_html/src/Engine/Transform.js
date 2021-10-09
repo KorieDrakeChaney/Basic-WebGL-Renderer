@@ -25,7 +25,9 @@ Transform.prototype.setY = function(y) {this.mPosition[1] = y;};
 Transform.prototype.getY = function() {return this.mPosition[1];
     };
 
-
+Transform.prototype.setZ = function(z) {this.mPosition[2] = z;};
+Transform.prototype.getZ = function() {return this.mPosition[2];
+    };
 Transform.prototype.setSize = function(width, height, depth) {
     this.mScale[0] = width;
     this.mScale[1] = height;
