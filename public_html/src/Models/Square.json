@@ -11,13 +11,9 @@
     "indices" : {
         "TRIANGLES" :
                 [0, 1, 2, 2, 3, 0],
-        "TRIANGLE_STRIP" :
-                [0, 1, 2, 2, 3, 0], 
         "TRIANGLE_FAN" : 
                 [0, 1, 2, 2, 3], 
         "LINE_LOOP" :
-                [0, 1, 1, 2, 2, 3], 
-        "LINE_STRIP" : 
                 [0, 1, 1, 2, 2, 3]
     }
 }

@@ -9,8 +9,6 @@ gEngine.Controls = (function() {
        RenderingOptionList : {
        TRIANGLES : 'TRIANGLES', 
        LINE_LOOP : 'LINE_LOOP', 
-       LINE_STRIP : 'LINE_STRIP', 
-       TRIANGLE_STRIP : 'TRIANGLE_STRIP', 
        TRIANGLE_FAN : 'TRIANGLE_FAN'
     },
        Objects : {
