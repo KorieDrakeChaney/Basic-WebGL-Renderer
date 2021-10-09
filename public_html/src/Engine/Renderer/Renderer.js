@@ -27,7 +27,9 @@ var Renderer = function(shader, viewProjMatrix) {
     
     
 };
+       
         
+
 Renderer.prototype.initialize = function(fileName) {
     this.loadData(fileName)
             .then(() => {

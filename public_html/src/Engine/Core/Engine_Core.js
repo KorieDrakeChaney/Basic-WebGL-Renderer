@@ -38,9 +38,7 @@ gEngine.Core = (function() {
      mGL.clearColor(color[0], color[1], color[2], color[3]);  
      mGL.clear(mGL.COLOR_BUFFER_BIT || mGL.DEPTH_BUFFER_BIT);
    };
-   
-   
-      
+
    // Contains the functions and variabls that will be accessible
    var mPublic = {
        getGL: getGL,
