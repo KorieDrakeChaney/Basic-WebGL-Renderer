@@ -78,7 +78,7 @@ Transform.prototype.incSizeBy = function(width = 0, height = 0){
 };
 
 
-Transform.prototype.setAll = function(position = [0, 0, 0], size = [1, 1, 1], rotation = 0){
+Transform.prototype.setAll = function(position = [0, 0, 0], size = [1, 1, 1], rotation = [0, 0, 0]){
    this.mPosition[0] = position[0];
    this.mPosition[1] = position[1];
    this.mPosition[2] = position[2];
@@ -87,7 +87,9 @@ Transform.prototype.setAll = function(position = [0, 0, 0], size = [1, 1, 1], ro
    this.mScale[1] = size[1];
    this.mScale[2] = size[2];
    
-   this.mRotationInRad = rotation;
+   this.mRotationInRad[0] = rotation[0];
+   this.mRotationInRad[1] = rotation[1];
+   this.mRotationInRad[2] = rotation[2];
 };
 
 
@@ -108,12 +110,15 @@ Transform.prototype.getModel = function() {
 
 Transform.prototype.changeTranslation = function (x, y, z){
     
-    var matrix = mat4.create();
     
-    mat4.translate(matrix, matrix, vec3.fromValues(x, y, z));
-
+    this.mPosition[0] = x;
+    this.mPosition[1] = y;
+    this.mPosition[2] = z;
     
-    return mat4.multiply(matrix, this.getModel(), matrix);
+    this.setAll([this.mPosition[0], this.mPosition[1], this.mPosition[2]], 
+                [this.mScale[0], this.mScale[1], this.mScale[0]], 
+                [this.mRotationInRad[0], this.mRotationInRad[1], this.mRotationInRad[2]]);
+    
 };
 
 

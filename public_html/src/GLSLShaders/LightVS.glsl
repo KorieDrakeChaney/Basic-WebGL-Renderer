@@ -23,7 +23,8 @@ out vec4 vVertexColor;
 
         float LambertianTerm = dot(normal, -lightDirection);
 
-        vVertexColor = vec4(uMaterialDiffuse * uLightDiffuse * LambertianTerm);
-
+        vec3 intensityDiffuse = uMaterialDiffuse * uLightDiffuse * LambertianTerm;  
+        vVertexColor = vec4(intensityDiffuse, 1.0);
+        // Setting the vertex position
         gl_Position = uProjectionMatrix * uModelViewMatrix * vec4(aVertexPosition, 1.0);
     }

@@ -80,19 +80,28 @@ MyGame.prototype.update = function() {
          switch(gEngine.Controls.getObjectSelection()){
              case 'SQUARE':
                 this.mWhiteSq.initialize('src/Models/Square.json');
-                 break;
+                this.mWhiteSq.getForm().changeTranslation(20, 60, 0);
+                break;
              case 'TRIANGLE':
                 this.mWhiteSq.initialize('src/Models/Triangle.json');
-                 break;
+                this.mWhiteSq.getForm().changeTranslation(20, 60, 0);
+                break;
              case 'CONE':
                 this.mWhiteSq.initialize('src/Models/Cone.json');
-                 break;
+                this.mWhiteSq.getForm().changeTranslation(20, 60, -10);
+                break;
              case "CUBE":
-                 this.mWhiteSq.initialize('src/Models/Cube.json');
-                 break;
+                this.mWhiteSq.initialize('src/Models/Cube.json');
+                this.mWhiteSq.getForm().changeTranslation(20, 60, 0);
+                break;
              case "PYRAMID":
-                 this.mWhiteSq.initialize('src/Models/Pyramid.json');
-                 break;
+                this.mWhiteSq.initialize('src/Models/Pyramid.json');
+                this.mWhiteSq.getForm().changeTranslation(20, 60, 0);
+                break;
+             case "SPHERE":
+                this.mWhiteSq.initialize('src/Models/Sphere.json');
+                this.mWhiteSq.getForm().changeTranslation(-10, 60, -100);
+                break;
          };
         this.prevObject = gEngine.Controls.getObjectSelection();
     };
@@ -109,7 +118,6 @@ MyGame.prototype.draw = function(){
 
     
     //Step C: Activate the white shader to drawg
-    this.mWhiteSq.getForm().incRotationByDegree(this.whiteRotation);
 
     this.mWhiteSq.render();
     // Step D: Activate the red shader to draw

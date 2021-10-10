@@ -16,7 +16,8 @@ gEngine.Controls = (function() {
            TRIANGLE : 'TRIANGLE', 
            PYRAMID : 'PYRAMID', 
            CUBE : 'CUBE', 
-           CONE : 'CONE'
+           CONE : 'CONE', 
+           SPHERE : 'SPHERE'
        },
        
        Rotation : {

@@ -11,7 +11,9 @@
             <word>aVertexNormal</word>
             <word>aVertexPosition</word>
             <word>fragColor</word>
+            <word>intensityDiffuse</word>
             <word>LambertianTerm</word>
+            <word>lightDiffuse</word>
             <word>lightDirection</word>
             <word>mediump</word>
             <word>ourColor</word>
