@@ -46,13 +46,6 @@ function SimpleShader(vertexShaderID, fragmentShaderID){
     
     return this.mCompiledShader;
 
-    
-
-    
-
-
-        
-
 };
 
 

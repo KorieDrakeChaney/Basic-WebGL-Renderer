@@ -6,7 +6,7 @@
 
 
 
-var Renderer = function(shader, lightObject, viewProjMatrix) {
+var Renderer = function(shader, viewProjMatrix) {
     
     var gl = gEngine.Core.getGL();
     
@@ -30,7 +30,7 @@ var Renderer = function(shader, lightObject, viewProjMatrix) {
     this.mPixelColor = null;
     this.mViewProjTransform = null;
     this.mVPMatrix = viewProjMatrix;
-    this.mLightObject = lightObject;
+    this.mLightObject = null;
     this.mColor = [1, 0, 1, 1]; // Color for the fragment shader
     this.mForm = new Transform();
     
