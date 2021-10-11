@@ -24,6 +24,7 @@ Start the server
 ```bash
   npx serve
 ```
+Run the html file
 
   
 ## Features
