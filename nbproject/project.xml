@@ -31,6 +31,7 @@
             <word>uViewProjTransform</word>
             <word>vec</word>
             <word>vVertexColor</word>
+            <word>WebGL</word>
         </spellchecker-wordlist>
     </configuration>
 </project>

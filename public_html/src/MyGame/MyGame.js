@@ -1,5 +1,3 @@
-
-
 /* global mat4, gEngine, vec3, vec2, Renderer */
 
 function MyGame(htmlCanvasID){

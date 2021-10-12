@@ -1,7 +1,7 @@
 {
-    "name": "HTML5Application",
+    "name": "WebGL Renderer",
     "version": "1.0.0",
-    "main": "path/to/main.css",
+    "main": "path/to/index.html",
     "ignore": [
         ".jshintrc",
         "**/*.txt"

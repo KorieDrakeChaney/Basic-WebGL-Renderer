@@ -1,8 +1,8 @@
 {
-    "name": "HTML5Application",
+    "name": "WebGL Renderer",
     "version": "1.0.0",
     "keywords": ["util", "functional", "server", "client", "browser"],
-    "author": "ilove",
+    "author": "Korie Drake Chaney",
     "contributors": [],
     "dependencies": {}
 }
