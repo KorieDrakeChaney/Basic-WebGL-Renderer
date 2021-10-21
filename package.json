@@ -1,8 +1,11 @@
 {
-    "name": "WebGL Renderer",
+    "name": "webgl_renderer",
     "version": "1.0.0",
     "keywords": ["util", "functional", "server", "client", "browser"],
     "author": "Korie Drake Chaney",
+    "scripts": {
+        "build": "npx serve"
+      },
     "contributors": [],
     "dependencies": {}
 }
