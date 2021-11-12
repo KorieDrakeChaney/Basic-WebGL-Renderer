@@ -24,7 +24,6 @@ Start
 ```bash
   npm run start
 ```
-Run the html file
 
   
 ## Features
