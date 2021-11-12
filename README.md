@@ -19,10 +19,10 @@ Go to the project directory
   cd my-project
 ```
 
-Start the server
+Start 
 
 ```bash
-  npx serve
+  npm run start
 ```
 Run the html file
 
