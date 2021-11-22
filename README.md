@@ -19,6 +19,11 @@ Go to the project directory
   cd Basic-WebGL-Renderer
 ```
 
+Install all dependencies 
+
+```bash
+  npm install
+```
 Start 
 
 ```bash
