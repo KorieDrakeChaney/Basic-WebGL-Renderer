@@ -22,7 +22,7 @@ Go to the project directory
 Start 
 
 ```bash
-  npm run start
+  npm run server
 ```
 
   
