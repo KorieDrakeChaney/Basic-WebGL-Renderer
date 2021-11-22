@@ -1,11 +1,19 @@
 {
     "name": "webgl_renderer",
     "version": "1.0.0",
-    "keywords": ["util", "functional", "server", "client", "browser"],
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
     "author": "Korie Drake Chaney",
     "scripts": {
-        "start": "nodemon server.js"
-      },
+        "server": "npx nodemon server.js"
+    },
     "contributors": [],
-    "dependencies": {}
+    "dependencies": {
+        "express": "^4.17.1"
+    }
 }
